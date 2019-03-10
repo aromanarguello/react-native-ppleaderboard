@@ -11,6 +11,7 @@ export const authService = (url, email, password, method = 'POST') => {
     })
         .then(res => res.json())
         .then(apiResponse => {
-            console.log(apiResponse).catch(err => console.log(err));
-        });
+            console.log(apiResponse);
+        })
+        .catch(err => console.log(err));
 };
