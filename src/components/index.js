@@ -1,3 +1,3 @@
-import SignUp from './Crendetials/SignUp';
+import Credentials from './Crendentials/Crendentials.container';
 
-export { SignUp };
+export { Credentials };
