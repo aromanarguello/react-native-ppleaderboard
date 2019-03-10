@@ -10,7 +10,7 @@ import {
     STORAGE_BUCKET,
     MESSAGING_SENDER_ID
 } from 'react-native-dotenv';
-import { SignUp } from './components/index';
+import { Credentials } from './components/index';
 
 class App extends Component {
     componentDidMount() {
@@ -26,7 +26,7 @@ class App extends Component {
     render() {
         return (
             <View>
-                <SignUp />
+                <Credentials />
             </View>
         );
     }
