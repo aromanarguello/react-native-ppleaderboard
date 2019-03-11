@@ -1,4 +1,9 @@
 import { StyleSheet } from 'react-native';
+import { styleProps } from '../../utils/styles/helpers';
+
+const {
+    colors: { blue }
+} = styleProps;
 
 export const styles = StyleSheet.create({
     container: {
@@ -18,11 +23,15 @@ export const styles = StyleSheet.create({
     button: {
         margin: 10,
         width: 150,
-        marginLeft: 100
+        marginLeft: 100,
+        borderColor: blue,
+        borderWidth: 2
     },
     signUpButtons: {
         margin: 10,
-        width: 150
+        width: 150,
+        borderColor: blue,
+        borderWidth: 2
     },
     loginButtonContainer: {
         height: 100,
