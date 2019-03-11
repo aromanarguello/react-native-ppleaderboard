@@ -35,6 +35,7 @@ const Login = ({
                 bordered
                 onPress={() => loginHandler()}
                 title="Login"
+                type="outline"
             />
             <Text onPress={() => newMember()} style={signUpText}>
                 Not a member? Sign up!

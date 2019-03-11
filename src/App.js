@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // eslint-disable-next-line
 import { firebase } from '@firebase/app';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import {
     FIREBASE_API_KEY,
     AUTH_DOMAIN,
@@ -11,6 +11,18 @@ import {
     MESSAGING_SENDER_ID
 } from 'react-native-dotenv';
 import { Credentials } from './components/index';
+import { styleProps } from './utils/styles/helpers';
+
+const {
+    colors: { orange }
+} = styleProps;
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: orange
+    }
+});
 
 class App extends Component {
     componentDidMount() {
@@ -25,7 +37,7 @@ class App extends Component {
     }
     render() {
         return (
-            <View>
+            <View style={styles.container}>
                 <Credentials />
             </View>
         );

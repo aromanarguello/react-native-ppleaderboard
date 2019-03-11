@@ -35,6 +35,7 @@ const SignUp = ({
                 bordered
                 onPress={() => signUpHandler()}
                 title="Sign Up"
+                type="outline"
             />
             <Button
                 onPress={() => backToLogin()}
@@ -42,6 +43,7 @@ const SignUp = ({
                 large
                 bordered
                 title="Back"
+                type="outline"
             />
         </View>
     </View>
